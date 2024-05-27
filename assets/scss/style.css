@@ -283,10 +283,26 @@ body {
   background-color: antiquewhite;
 }
 
+.task__input-value:focus {
+  border: 1px solid rebeccapurple;
+  transition: border 0.1s linear;
+}
+
 .task__input-button {
   width: 15rem;
   height: 3rem;
   background-color: aquamarine;
+}
+
+.task__input-button:hover {
+  border: 1px solid rebeccapurple;
+  transition: border 0.1s linear;
+}
+
+.task__input-button:active {
+  background-color: rgb(165, 96, 234);
+  color: white;
+  transition: background-color 0.1s linear, color 0.1s linear;
 }
 
 .task__list {
