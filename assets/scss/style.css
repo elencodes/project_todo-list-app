@@ -285,7 +285,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5625rem;
-  gap: 0.625rem;
+  gap: 0.9375rem;
 }
 
 .todo__input {
