@@ -92,7 +92,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	padding: .625rem;
-	margin: .625rem 1rem .625rem 0;
+	margin: .625rem 0.5rem .625rem 0;
 	background-color: #171c48;
 	border: 1px solid #828cff74;
 	border-radius: .625rem;
@@ -166,22 +166,14 @@ input:checked+span::before {
 	overflow: overlay;
 }
 
-.todos__container::-webkit-scrollbar-track {
-	background: #FFFFFF;
-	border-radius: 1.25rem;
-}
-
-.todos__container::-webkit-scrollbar {
-	width: 0;
+//W3C standard for Firefox (scrollbar styles)
+.todos__container {
+	scrollbar-color: #ffffffbd #828cff74;
+	scrollbar-width: thin;
 }
 
 .todos__container:hover::-webkit-scrollbar {
 	width: .4375rem;
-}
-
-.todos__container::-webkit-scrollbar-thumb {
-	background: #FFFFFF;
-	border-radius: 1.25rem;
 }
 
 .filters {

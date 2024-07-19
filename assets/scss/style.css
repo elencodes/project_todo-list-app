@@ -327,7 +327,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0.625rem;
-  margin: 0.625rem 1rem 0.625rem 0;
+  margin: 0.625rem 0.5rem 0.625rem 0;
   background-color: #171c48;
   border: 1px solid rgba(130, 140, 255, 0.4549019608);
   border-radius: 0.625rem;
@@ -401,22 +401,13 @@ input:checked + span::before {
   overflow: overlay;
 }
 
-.todos__container::-webkit-scrollbar-track {
-  background: #FFFFFF;
-  border-radius: 1.25rem;
-}
-
-.todos__container::-webkit-scrollbar {
-  width: 0;
+.todos__container {
+  scrollbar-color: rgba(255, 255, 255, 0.7411764706) rgba(130, 140, 255, 0.4549019608);
+  scrollbar-width: thin;
 }
 
 .todos__container:hover::-webkit-scrollbar {
   width: 0.4375rem;
-}
-
-.todos__container::-webkit-scrollbar-thumb {
-  background: #FFFFFF;
-  border-radius: 1.25rem;
 }
 
 .filters {
