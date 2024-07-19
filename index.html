@@ -4,22 +4,26 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ToDo List</title>
+	<title>ToDo App</title>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="./assets/scss/style.css">
 </head>
 
 <body>
 	<div class="container">
 		<h1 class="title">ToDo List</h1>
-		<div class="task__input">
-			<input class="task__input-value" id="task" type="text" placeholder="Введите задачу">
-			<button class="task__input-button" id="addTask">Добавить</button>
+		<div class="input__container">
+			<input class="todo__input" type="text" placeholder="Введите задачу">
+			<button class="add__button">
+				<i class='bx bx-plus'></i>
+			</button>
 		</div>
-		<div class="task__list">
-			<ul class="list" id="taskList"></ul>
+		<div class="todos__container">
+			<ul class="todos"></ul>
+			<p class="text">Список задач пуст</p>
 		</div>
 	</div>
-	<script src="./assets/js/script.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
