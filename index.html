@@ -13,14 +13,19 @@
 	<div class="container">
 		<h1 class="title">ToDo List</h1>
 		<div class="input__container">
-			<input class="todo__input" type="text" placeholder="Введите задачу">
+			<input class="todo__input" type="text" placeholder="Введите задачу" minlength="2" maxlength="40">
 			<button class="add__button">
 				<i class='bx bx-plus'></i>
 			</button>
 		</div>
+		<div class="filters">
+			<div class="filter" data-filter="completed">Выполнено</div>
+			<div class="filter" data-filter="pending">В работе</div>
+			<div class="delete-all">Очистить список</div>
+		</div>
 		<div class="todos__container">
 			<ul class="todos"></ul>
-			<p class="text">Список задач пуст</p>
+			<p class="text">Список задач отсутствует</p>
 		</div>
 	</div>
 	<script src="js/script.js"></script>
