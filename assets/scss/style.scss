@@ -145,7 +145,7 @@ input:checked+span {
 
 .todo:hover input:checked+span::before,
 input:checked+span::before {
-	background: #24feee;
+	background: url(/assets/icons/check.svg) 50% 50% no-repeat #24feee;
 	border-color: #24feee;
 }
 
