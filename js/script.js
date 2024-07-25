@@ -98,7 +98,7 @@ function remove(todo) {
 	//функция отображения списка задач
 	showTodos();
 	//преобразовываем объект в строку и отправляем данные в localStorage
-	localStorage.setItem("todos", stringify(todosJson));
+	localStorage.setItem("todos", JSON.stringify(todosJson));
 }
 
 //Обработка фильтров
